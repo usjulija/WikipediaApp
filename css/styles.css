@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #a1769d;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-family: 'Poiret One', sans-serif;
+  text-align: center;
+  color: #247BA0;
+}
+
+.header i {
+  color: #247BA0;
+  background: #70C1B3;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.header {
+  padding: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: white;
+  /* overflow: auto; */
+  /* box-shadow:0 0 5px 5px rgba(0,0,0,0.1); */
+  transition:transform 0.3s ease-out;
+}
+
+.search-buttons {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 25px 25px 25px;
+}
+
+.search-buttons button {
+  color: #0E303F;
+  background:#B2DBBF;
+  border: 0;
+  width: 44%;
+  max-width: 120px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px 8px;
+  font-size: 1em;
+  border-bottom: 5px solid #70C1B3;
+  cursor:pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.search-buttons button:active {
+  top:2px;
+  outline: 0;
+  border-bottom: 3px solid #70C1B3;
+}
+
+.search-buttons button:focus,
+.search-buttons button:hover {
+  outline: 0;
+  background: #247BA0;
+  border-bottom: 5px solid #0E303F;
+  color: white;
+}
+
+.search-buttons button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+.app {
+  color: #0E303F;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.button {
+  color: #247BA0;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+}
+
+.searchForm input {
+  width: 80%;
+  height: 50px;
+  padding: 12px 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  background: #B2DBBF;
+  color: #247BA0;
+  border: 0;
+}
+
+.searchForm input:focus {
+  outline: 0;
+  background: #F3FFBD;
+}
+
+.searchForm button {
+  width: 50px;
+  height: 50px;
+  background:#70C1B3;
+  border: 0;
+  color: #247BA0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.searchForm button:hover,
+.searchForm button:focus {
+  background: #FF1654;
+  color: white;
+  outline: 0;
+}
+
+.container {
+  left: 4px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #a1769d;
+  padding: 0 10px;
+  }
+
+.container li {
+  background: #F3FFBD;
+  list-style: none;
+  border-bottom: 1px solid #BAC291;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 10px;
+  transition: background 0.2s;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: justify;
+  }
+
+.container h2 {
+  font-size: 17px;
+}
+
+.container p {
+  font-size: 15px;
+}
+
+.container a {
+  text-align: right;
+  font-size: 15px;
+  color: #247BA0;
+  width: 100%;
+}
+
+.container li:nth-child(even) {
+  transform: perspective(100px) rotateX(2deg) translateY(-4px) scale(1.001);
+  background: linear-gradient(to bottom,  #F3FFBD 0%,#D3DBA4 100%);
+  }
+.container li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-2deg) translateY(2px);
+  background: linear-gradient(to top,  #F3FFBD 0%,#D3DBA4 100%);
+  }
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer a {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fadeIn{
+  padding: 0 25px 25px 25px;
+  text-align: justify;
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0.0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0.0;}
+	100% {opacity: 1;}
+}
+
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;
+
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+}
+
+@keyframes slideDown {
+	0% {transform: translateY(-100%);}
+	50%{transform: translateY(8%);}
+	100% {transform: translateY(0%);}
+}
+
+@-webkit-keyframes slideDown {
+	0% {-webkit-transform: translateY(-100%);}
+	50%{-webkit-transform: translateY(8%);}
+	100% {-webkit-transform: translateY(0%);}
+}
+
+
+@media screen and (min-width: 600px) {
+  .main {
+    min-width: 400px;
+    max-width: 85%;
+  }
+  .search-buttons button {
+    margin: 0 5px;
+  }
+  .searchForm input {
+    width: 60%;
+  }
+  .container li:nth-child(even) {
+    transform: perspective(100px) rotateX(2deg) translateY(-2px) scale(1.001);
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    max-width: 55%;
+  }
+  .container li:nth-child(even) {
+    transform: perspective(100px) rotateX(2deg) translateY(-1px) scale(1.001);
+  }
+}
