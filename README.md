@@ -10,6 +10,7 @@ Project is inspired by freeCodeCamp challenge. Project is built using JavaScript
 ## How to install
 Clone repository and open index.html file.
 
+Or preview online: [Online preview](https://usjulija.github.io/WikipediaApp/).
+
 ## App preview
-[Online preview]()
 ![App preview](https://preview.ibb.co/gLuhHp/OE60X61.jpg)
